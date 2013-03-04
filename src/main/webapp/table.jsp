@@ -9,12 +9,12 @@
     </head>
     <body>
         
-        <h1>Struts 2 + Spring + Hibernate integration example</h1>
+        <h1>Struts 2 + Spring + Hibernate</h1>
  
-<h2>Add Customer</h2>
+<h2>Add Table</h2>
 <s:form action="addTableAction" >
-  <s:textfield name="table.tableName" label="table_name" value="" />
-  <s:textarea name="table.tableStatus" label="table_status" value="" />
+  <s:textfield name="table.tableName" label="Table name" value="" />
+  <s:textfield name="table.tableStatus" label="Table status" value="" />
   <s:submit />
 </s:form>
  
