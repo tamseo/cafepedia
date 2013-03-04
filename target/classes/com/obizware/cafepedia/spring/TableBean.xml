@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="tableAction" class="com.obizware.cafepedia.action.TableAction">
+		<property name="tableService" ref="tableService" />	
+	</bean>
+ 
+	<bean id="tableService" class="com.obizware.cafepedia.service.impl.TableServiceImpl">
+		<property name="tableDAO" ref="tableDAO" />
+	</bean>
+ 
+   	<bean id="tableDAO" class="com.obizware.cafepedia.dao.impl.TableDAOImpl" >
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+</beans>
